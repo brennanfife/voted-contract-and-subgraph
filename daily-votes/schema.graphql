@@ -1,0 +1,6 @@
+type Vote @entity {
+  id: ID!
+  date: String!
+  totalTrumpVotes: BigInt!
+  totalBidenVotes: BigInt!
+}
