@@ -5,7 +5,7 @@ const INFURA_ID = process.env.INFURA_KEY;
 const MNEMONIC = process.env.MNEMONIC;
 
 module.exports = {
-  contracts_build_directory: path.join(__dirname, "build"),
+  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   networks: {
     kovan: {
       provider: () => {
