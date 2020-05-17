@@ -1,6 +1,4 @@
-type Vote @entity {
+type Option @entity {
   id: ID!
-  date: String!
-  totalTrumpVotes: BigInt!
-  totalBidenVotes: BigInt!
+  totalVotes: BigInt!
 }

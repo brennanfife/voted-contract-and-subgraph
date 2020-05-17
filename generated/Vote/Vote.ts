@@ -32,9 +32,9 @@ export class Voted__Params {
   }
 }
 
-export class Contract extends ethereum.SmartContract {
-  static bind(address: Address): Contract {
-    return new Contract("Contract", address);
+export class Vote extends ethereum.SmartContract {
+  static bind(address: Address): Vote {
+    return new Vote("Vote", address);
   }
 
   TotalBidenVotes(): BigInt {
