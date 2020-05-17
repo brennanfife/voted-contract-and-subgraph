@@ -4,12 +4,15 @@
   "description": "",
   "main": "truffle-config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ brennanfife/daily-votes"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphprotocol/graph-ts": "^0.18.1",
     "@openzeppelin/contracts": "^3.0.1",
     "@truffle/hdwallet-provider": "^1.0.35",
     "dotenv": "^8.2.0"
